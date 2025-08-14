@@ -1,4 +1,4 @@
-# crazyflie_pololu_integration
+# PoloFlie_GridRunner
 Develop a central hub and Pololu robot code using MQTT and Crazyflie PA to coordinate drones and ground robots in navigating to grid waypoints. 
 
 # Multi-Agent Grid Navigation with MQTT and Crazyflie PA
