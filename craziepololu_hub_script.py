@@ -2,11 +2,6 @@ import time
 import sys
 import paho.mqtt.client as mqtt
 
-'''
-TODOs:
-
-'''
-
 # Crazyflie imports\import cflib.crtp
 import cflib
 from cflib.crazyflie import Crazyflie
