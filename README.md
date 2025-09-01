@@ -78,3 +78,7 @@ Pololu robots communicate via **ESP32 bridges** that forward MQTT messages to th
 2. Crazyflie moves using PA-based positioning.
 3. Hub sends movement commands to Pololu robots.
 4. Robots report back coordinates upon reaching their waypoint.
+
+## License
+
+This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
