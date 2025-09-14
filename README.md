@@ -19,9 +19,9 @@ Pololu robots communicate via **ESP32 bridges** that forward MQTT messages to th
 ---
 
 ## Repository Structure
-├── esp27july25.ino # ESP32 firmware for Pololu communication over MQTT
-├── pololu_integrated27JULY.py # Pololu 3pi+ robot code for executing commands from ESP32
-├── pololucrazyHUB.py # Central hub script managing waypoints and device coordination
+├── esp32_MQTT.ino # ESP32 firmware for Pololu communication over MQTT
+├── pololu_robot_code.py # Pololu 3pi+ robot code for executing commands from ESP32
+├── craziepololu_hub_script.py # Central hub script managing waypoints and device coordination
 
 ---
 
@@ -46,18 +46,18 @@ Pololu robots communicate via **ESP32 bridges** that forward MQTT messages to th
 ## Setup
 
 ### 1. ESP32 Firmware
-1. Open `esp27july25.ino` in Arduino IDE.
+1. Open `esp32_MQTT.ino` in Arduino IDE.
 2. Set your Wi-Fi SSID and password.
 3. Set your MQTT broker IP (`192.168.1.10` by default).
 4. Upload to the ESP32 connected to each Pololu robot.
 
 ### 2. Pololu Robot Code
-1. Load `pololu_integrated27JULY.py` onto the Pololu 3pi+ 2040 OLED.
+1. Load `pololu_robot_code.py` onto the Pololu 3pi+ 2040 OLED.
 2. Ensure the UART pins match the ESP32 connection (TX=GP28, RX=GP29).
 3. The robot will execute commands received over MQTT.
 
 ### 3. Hub Script
-1. Run `pololucrazyHUB.py` on your central control computer.
+1. Run `craziepololu_hub_script.py` on your central control computer.
 2. The script will:
    - Connect to the MQTT broker.
    - Assign waypoints to drones and robots.
